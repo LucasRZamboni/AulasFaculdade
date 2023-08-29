@@ -1,0 +1,299 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+section a button{
+    margin: 5px;
+}
+.division{
+    width: 90%;
+    height: 5px;
+    background: black;
+    border-radius: 50%;
+    align-self: center;
+    margin: 5px 0;
+    box-shadow: 0 0 10px rgb(48, 48, 48), 0 0 15px rgb(129, 47, 47);
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-self: center;
+    border-radius: 5px;
+    background: rgba(128, 128, 128, 0.699);
+    padding: 10px;
+}
+.circulo1,
+.circulo2,
+.circulo3{
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circulo1{
+    width: 200px;
+    height: 200px;
+    background: green;
+}
+.circulo2{
+    width: 150px;
+    height: 150px;
+    background: greenyellow;
+    position: absolute;
+    bottom: 0;
+}
+.circulo3{
+    width: 100px;
+    height: 100px;
+    background: orangered;
+    position: absolute;
+    bottom: 0;
+}
+.circulo1 p,
+.circulo2 p,
+.circulo3 p{
+    position: absolute;
+    top: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.circulado{
+    border-radius: 45%;
+    border: 2px solid black;
+    padding: 10px;
+    width: fit-content;
+}
+.menu{
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px 25px;
+    position: fixed;
+    top: 50px;
+    right: 2%;
+    border: 2px solid rgb(108, 117, 125);
+    font-weight: 700;
+    color: rgb(108, 117, 125);
+    transition: .2s;
+    box-shadow: 0 0 10px 2px rgb(255, 255, 255);
+}
+.menu:hover{
+    background: rgb(108, 117, 125);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px 2px rgb(108, 117, 125);
+}
+.goTop{
+    position: fixed;
+    bottom: 10px;
+    right: 40px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid rgb(108, 117, 125);
+    font-weight: 700;
+    color: rgb(108, 117, 125);
+    transition: .2s;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px rgb(255, 255, 255);
+    z-index: 1000;
+}
+
+.goTop:hover{
+    background: rgb(108, 117, 125);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px 2px rgb(108, 117, 125);
+}
+.buttons{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.boxTriangulo{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    padding: 10px;
+    z-index: 0;
+    width: 90%;
+    align-self: center;
+}
+.triangulo {
+    width: 0; 
+    height: 0; 
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 150px solid #545555;
+    position: absolute;
+}
+.triangulo::after,
+.triangulo::before{
+    content: "";
+    width: 100px;
+    height: 5px;
+    background: rgb(60, 238, 60);
+    position: absolute;
+}
+.triangulo::after{
+    top: 50px;
+    left: -50px;
+}
+.triangulo::before{
+    top: 100px;
+    left: -100px;
+    width: 200px;
+}
+.triangulo p{
+    position: absolute;
+    left: -45px;
+    color: white;
+}
+.triangulo p:nth-child(1){
+    top: 20px;
+    left: -35px;
+}
+.triangulo p:nth-child(1)::after,
+.triangulo p:nth-child(2)::after,
+.triangulo p:nth-child(3)::after
+{
+    content: "- Longo prazo";
+    margin-left: 10px;
+    width: 120px;
+    position: absolute;
+    color: rgb(174, 184, 115);
+    font-weight: 900;
+}
+.triangulo p:nth-child(2)::after{
+    content: "- Médio prazo";
+}
+.triangulo p:nth-child(3)::after{
+    content: "- Curto prazo";
+}
+.triangulo p:nth-child(2){
+    top: 70px;
+    left: -20px;
+}
+.triangulo p:nth-child(3){
+    top: 120px;
+    left: -40px;
+}
+.quadro{
+    position: relative;
+}
+.recursos::after{
+    content: "";
+    width: 5px;
+    height: 20px;
+    position: absolute;
+    background: black;
+    left: 25px;
+    bottom: 35px;
+}
+.recursos::before{
+    content: "";
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border: 2px solid black;
+    left: -5px;
+    bottom: 15px;
+}
+.linha{
+    width: 150px;
+    height: 5px;
+    background: black;
+    position: absolute;
+    transform: rotate(-25deg);
+    left: 70px;
+    bottom: 20px;
+}
+.smart{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.smart h2{
+    width: fit-content;
+    display: flex;
+}
+.graphic{
+    width: 310px;
+    height: 310px;
+    position: relative;
+}
+.graphic .cube{
+    width: 300px;
+    height: 200px;
+    border: 4px solid black;
+    border-top: transparent;
+    border-right: transparent;
+    position: relative;
+}
+.graphic .cube .line1,
+.graphic .cube .line2{
+    width: 2px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    background: red;
+}
+.graphic .cube .line2{
+    width: 280px;
+    height: 2px;
+    top: 50%;
+    left: 0;
+}
+.graphic p:nth-child(3){
+    position: absolute;
+    right: 0;
+}
+p,
+li{
+    color: rgb(255, 255, 255);
+}
+/* -----------TRIANGULO DE OUTRO JEITO---------- */
+/* .teste{
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+    background: blue;
+} */
