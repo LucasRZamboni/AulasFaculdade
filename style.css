@@ -102,6 +102,7 @@ ul{
     color: rgb(108, 117, 125);
     transition: .2s;
     box-shadow: 0 0 10px 2px rgb(255, 255, 255);
+    z-index: 10000;
 }
 .menu:hover{
     background: rgb(108, 117, 125);
