@@ -291,6 +291,15 @@ p,
 li{
     color: rgb(255, 255, 255);
 }
+img{
+    transition: .2s;
+}
+img[alt="serviços"]:hover,
+img[alt="dimensões"]:hover{
+    scale: 1.5;
+    transition: .3s;
+}
+
 /* -----------TRIANGULO DE OUTRO JEITO---------- */
 /* .teste{
     width: 200px;
